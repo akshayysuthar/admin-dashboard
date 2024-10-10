@@ -13,7 +13,6 @@ const githubRepoLinks = [
     url: "https://github.com/akshayysuthar/portfolio",
     apiUrl: "https://api.github.com/repos/akshayysuthar/portfolio",
   },
-
 ];
 
 export default function Layout({ children }) {
@@ -93,7 +92,7 @@ export default function Layout({ children }) {
                   </a>
                   {commits[repo.name] && (
                     <p className="text-xs text-black">
-                      Last commit: "{commits[repo.name].message}" on{" "}
+                      Last commit: &quot;{commits[repo.name].message}&quot; on:
                       {commits[repo.name].date}
                     </p>
                   )}
